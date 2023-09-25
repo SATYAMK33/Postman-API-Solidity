@@ -27,7 +27,7 @@ contract Votingsystem {
         require(_candidateindex < candidate.length, "Invalid");
 
         candidate[_candidateindex].votes++;
-        voters[msg.sender]==true; 
+        voters[msg.sender]=true; 
 
     }
 
