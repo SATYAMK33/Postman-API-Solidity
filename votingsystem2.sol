@@ -67,6 +67,10 @@ contract Votingsystem {
              wvotes = candidate[i].votes;
              winner = candidate[i].name;
          }
+        else if (candidate[i].votes==wvotes){
+             wvotes = candidate[i].votes;
+             winner = "Tie";
+         }
     
      }
      
