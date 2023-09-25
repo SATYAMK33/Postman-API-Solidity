@@ -46,7 +46,7 @@ contract Votingsystem {
        votingToken.transferFrom(msg.sender, address(this), 1);
 
         candidate[_candidateindex].votes++;
-        voters[msg.sender]==true; 
+        voters[msg.sender]=true; 
 
     }
  
