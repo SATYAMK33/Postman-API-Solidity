@@ -59,12 +59,12 @@ contract Votingsystem  {
     }
 
 // function to startvoting
-    function startvlection() public onlyowner {
+    function startelection() public onlyowner {
         votingstarted = true;
     }
 
 // function to endvoting
-    function endvlection() public onlyowner  {
+    function endelection() public onlyowner  {
         votingended = true;
     }
 
