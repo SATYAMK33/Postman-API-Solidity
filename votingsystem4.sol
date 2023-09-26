@@ -59,12 +59,12 @@ contract Votingsystem  {
     }
 
 // function to startvoting
-    function startelection() public onlyowner {
+    function startvoting() public onlyowner {
         votingstarted = true;
     }
 
 // function to endvoting
-    function endelection() public onlyowner  {
+    function endvoting() public onlyowner  {
         votingended = true;
     }
 
@@ -81,7 +81,7 @@ contract Votingsystem  {
     }
  
  // function to see election results
-    function electionresults() public view returns (Candidates[] memory){
+    function votingresults() public view returns (Candidates[] memory){
      return candidate;
 
     }
